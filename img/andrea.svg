@@ -1,0 +1,22 @@
+
+<svg width="600" height="150" viewBox="0 0 600 150" xmlns="http://www.w3.org/2000/svg">
+  <style>
+   
+  </style>
+
+  <defs>
+    <linearGradient id="animatedGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ec4899">
+        <animate attributeName="stop-color" values="#ec4899;#fbbf24;#ec4899" dur="5s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="100%" stop-color="#fbbf24">
+        <animate attributeName="stop-color" values="#fbbf24;#ec4899;#fbbf24" dur="5s" repeatCount="indefinite" />
+      </stop>
+    </linearGradient>
+  </defs>
+
+  <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle"
+        font-size="64" fill="url(#animatedGradient)">
+    Andrea
+  </text>
+</svg>

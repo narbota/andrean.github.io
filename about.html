@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Andrea | Developer  Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+    :root {
+      --violet: #2e008b;
+      --magenta: #ff008c;
+      --white: #ffffff;
+      --gray: #f9f9f9;
+      --font: 'Roboto', sans-serif;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: var(--font);
+      background-color: var(--white);
+      color: var(--violet);
+    }
+
+    /* Header */
+
+    header {
+      background-color: var(--violet);
+      color: var(--magenta);
+      padding: 0 2rem;
+      text-align: center;
+    }
+    header .half-circle {
+      width: 50px;
+      height: 50px;
+      background-color: var(--white);
+      
+      border-radius: 0 0 100% 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    
+
+    header h1 {
+      font-size: 3rem;
+    }
+
+    header h2 {
+      font-size: 1rem;
+      color: var(--white);
+      margin: 0.5rem 0 2rem;
+    }
+    
+
+text {
+  font-family: 'Poppins', sans-serif;
+}
+    .cta-button {
+      padding: 1rem 2rem;
+      background-color: var(--magenta);
+      color: var(--white);
+      border: none;
+      text-transform: uppercase;
+      font-weight: bold;
+      cursor: pointer;
+      margin-bottom: 2rem;
+      border-radius: 50%;
+    }
+    /* About */
+    section {
+        padding: 4rem 2rem;
+        ;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    /* Section titles */
+    section h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: var(--violet); /* assuming this is your theme color */
+    font-weight: bold;
+    }
+    /* Space between sections */
+    section {
+    margin: 4rem 0;
+    }   
+    .about {
+    background-color: red;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    }
+    .about p {
+      font-size: 1.1rem;
+      margin-top: 1rem;
+    }
+    /* Project Section */
+
+    .projects {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+      margin: 4rem 0;
+    }
+    .section-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    }
+    .projects h2 {
+        font-size: 2rem;
+        color: var(--violet);
+        font-weight: bold;
+        margin-bottom: 2rem;
+        text-align: left; /* or left if you prefer */
+    }
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+    .project-card {
+      background-color: var(--violet);
+      color: var(--white);
+      padding: 1rem;
+      border-radius: 8px;
+      
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+    }
+    .project-card img {
+      width: 100%;
+      max-width: 250px;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .project-card h3 {
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .project-card small {
+      display: block;
+      margin-top: 0.5rem;
+      font-size: 0.8rem;
+      color: #ddd;
+    }
+/* Blog Section */
+    .blog ul {
+      list-style: none;
+      padding-left: 0;
+      margin-top: 1rem;
+    }
+
+    .blog li {
+      font-size: 1rem;
+      margin: 0.5rem 0;
+    }
+
+    /* Footer */
+    footer {
+      background-color: var(--gray);
+      text-align: center;
+      padding: 3rem 2rem;
+    }
+
+    footer h2 {
+      color: var(--magenta);
+      margin-bottom: 1rem;
+    }
+
+    .contact-info p {
+      margin: 0.3rem 0;
+    }
+
+    .socials a {
+      margin: 0 0.5rem;
+      text-decoration: none;
+      color: var(--violet);
+      font-size: 1.5rem;
+    }
+    /* Media Queries */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.5rem;
+      }
+
+      header h2 {
+        font-size: 0.9rem;
+      }
+
+      .cta-button {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.9rem;
+      }
+
+      section {
+        padding: 2rem 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <svg width="600" height="150" viewBox="0 0 600 150" xmlns="http://www.w3.org/2000/svg">
+        <style>
+          @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+  
+          text {
+            font-family: 'Poppins', sans-serif;
+          }
+        </style>
+  
+        <defs>
+          <linearGradient id="animatedGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#ec4899">
+              <animate attributeName="stop-color" values="#ec4899;#fbbf24;#ec4899" dur="5s" repeatCount="indefinite" />
+            </stop>
+            <stop offset="100%" stop-color="#fbbf24">
+              <animate attributeName="stop-color" values="#fbbf24;#ec4899;#fbbf24" dur="5s" repeatCount="indefinite" />
+            </stop>
+          </linearGradient>
+        </defs>
+  
+        <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle"
+              font-size="64" fill="url(#animatedGradient)">
+          Andrea
+        </text>
+      </svg>
+    
+    <h2>Solutions Engineer | Frontend Dev | Storyteller</h2>
+    <button class="cta-button">Work With Me</button>
+  </header>
+
+  <section class="about">
+    <h2>About</h2>
+    <p>I’m Andrea, I love developing and all things tech!</p>
+  </section>
+
+  <section class="projects">
+    <div class="section-inner">
+      <h2>Projects</h2>
+  
+      <div class="grid-container">
+        <div class="project-card">
+          <img src="/img/weather-site.png" alt="weather">
+          <h3>Tiny Voices, Big Dreams</h3>
+          <small>Sep 12 2030 · Bespoke Magazine</small>
+        </div>
+  
+        <div class="project-card">
+          <img src="/img/weather-site.png" alt="weather">
+          <h3>Greener Future: Rethinking our environmental impact</h3>
+          <small>Jul 25 2030 · The Reporter</small>
+        </div>
+  
+        <div class="project-card">
+          <img src="/img/weather-site.png" alt="weather">
+          <h3>The Tailor’s Tale: An interview with Irena Kim</h3>
+          <small>May 09 2030 · The Current Times</small>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <section class="blog">
+    <h2>Blog</h2>
+    <ul>
+      <li>Dynamic News Network</li>
+      <li>The Reporter</li>
+      <li>The Current Times</li>
+      <li>Trending Media Organization</li>
+      <li>Bespoke Magazine</li>
+    </ul>
+  </section>
+
+  <footer>
+    <h2>Work With Me</h2>
+    <div class="contact-info">
+      <p><strong>Phone:</strong> (123) 456 7890</p>
+      <p><strong>Email:</strong> hello@reallygreatsite.com</p>
+    </div>
+    <div class="socials">
+      <a href="#">📘</a>
+      <a href="#">📸</a>
+      <a href="#">▶️</a>
+    </div>
+  </footer>
+</body>
+</html>
